@@ -1,0 +1,12 @@
+<h1>{{ sandwich|title }}</h1>
+<p>Keep refreshing the page for a new sandwich!</p>
+
+<p>Click the button if you are hungry!</p>
+
+<form action="{% url 'sandwich_generator' %}">
+    <input type="submit" value="Build a sandwich!" />
+</form>
+
+
+<form action="{% url 'sandwich' %}">
+    <input type="su

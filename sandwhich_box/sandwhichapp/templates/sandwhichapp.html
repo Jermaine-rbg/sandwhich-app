@@ -1,0 +1,17 @@
+<h1>Welcome to the JTC </h1>
+
+<h3>Ingredients</h3>
+
+<ul>
+    {% for ingredient in ingredients %}
+    <li>
+        <a href="/sandwich/ingredients/{{ ingredient }}">{{ ingredient }}</a>
+    </li>
+    {% endfor %}
+</ul>
+
+<p>Click the button if you are hungry!</p>
+
+<form action="/sandwich/random">
+    <input type="submit" value="Make a sandwich!" />
+</form>
